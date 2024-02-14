@@ -1,3 +1,18 @@
+//  2a. You are the manager of a clothing manufacturing factory with a production line of super sewing machines. The
+//  production line consists of n super sewing machines placed in a line. Initially, each sewing machine has a certain
+//  number of dresses or is empty.
+//  For each move, you can select any m (1 <= m <= n) consecutive sewing machines on the production line and pass
+//  one dress from each selected sewing machine to its adjacent sewing machine simultaneously.
+//  Your goal is to equalize the number of dresses in all the sewing machines on the production line. You need to
+//  determine the minimum number of moves required to achieve this goal. If it is not possible to equalize the number
+//  of dresses, return -1.
+//  Input: [1,0,5]
+//  Output: 2
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Algorithm Steps:
+
 package Question2;
 
 public class Qst_2a {
@@ -37,3 +52,10 @@ public class Qst_2a {
         System.out.println("Minimum moves to equalize dresses: " + minMoves);
     }
 }
+
+// output: 2
+
+// note:
+//
+
+// Steps Explanation:
