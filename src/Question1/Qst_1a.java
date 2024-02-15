@@ -108,5 +108,4 @@ public class Qst_1a {
 // 11. The cost of current venue with current theme is calculated and the method "minDecorCost" is updated.
 // 12. The "minCosts" array is also updated with the minimum cost for the current venue and theme.
 // 13. After iterating through all venues, we need to find the minimum cost of decorating the last venue. This is
-//     achieved by examining the costs in the last row of the "minCosts" array.
-// 14. Finally, we return the minimum cost.
+//     achieved by examining the costs in the last row of the "minCosts" array. Finally, we return the minimum cost.
