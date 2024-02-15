@@ -87,5 +87,6 @@ public class Qst_2a {
 // 9. Update the "diff" variable by adding the difference between the number of dresses in the current machine and
 //    the target dress amount.
 // 10. If the "diff" is not zero (indicating that the current machine has more dresses than the target), increment
-//     the "moves" variable.   Return the value of the "moves" variable, which represents the minimum number of moves needed to equalize
+//     the "moves" variable.
+// 11. Return the value of the "moves" variable, which represents the minimum number of moves needed to equalize
 //     the dresses.

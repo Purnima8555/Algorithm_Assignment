@@ -84,4 +84,5 @@ public class Qst_2b {
 // 5. Within each interval, update "secretKnower" to include individuals who receive the secret.
 // 6. Iterate through each individual and set their corresponding index in "secretKnower" to true if they receive the secret.
 // 7. Create an ArrayList named "secretKeepers" to store index of individuals who know the secret.
-// 8. Iterate through "secretKnower" and add individuals who know the secret to "secretKeepers".    Return the list of individuals who know the secret.
+// 8. Iterate through "secretKnower" and add individuals who know the secret to "secretKeepers".
+// 9. Return the list of individuals who know the secret.
