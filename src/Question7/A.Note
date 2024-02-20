@@ -1,0 +1,13 @@
+About the app.
+
+The frontend and backend of this app is built using JavaSwing and the database is a csv file.
+The Login and Register of this app is done through UserLoginPanel and UserRegisterPanel and the user data is saved
+in user_data.csv.
+When logged in the instead of userId, the current user's username is saved in current_user.csv and is used for other
+activities around the app.
+After logging in the user will be navigated to the dashboard and there user can view various posts, from there, users
+can also post their own picture or videos in the app. (db did not support the content)
+The posted images and videos will be saved in content_data.csv and will be retrieved from there to the dashboard.
+The user can Add friends through friends button.
+The user can navigate to inboxPanel through inbox button.
+The App is not complete.

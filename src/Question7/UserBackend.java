@@ -8,8 +8,8 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class UserDatabase {
-    private static final String FILE_PATH = "user_data.csv";
+public class UserBackend {
+    private static final String FILE_PATH = "user_data.csv"; // Change this path as per your requirement
 
     public static void registerUser(String name, String email, String username, String password) {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(FILE_PATH, true))) {
@@ -43,12 +43,21 @@ public class UserDatabase {
     public static boolean authenticateUser(String username, String password) {
         List<String[]> users = getAllUsers();
         for (String[] userData : users) {
-            // return true if user found else false
             if (userData[2].equals(username) && userData[3].equals(password)) {
-                return true;
+                return true; // User found with matching username and password
             }
         }
-        return false;
+        return false; // No user found with matching username and password
     }
 
+//    public static String readUsernameFromFile() {
+//        String username = null;
+//        try (BufferedReader reader = new BufferedReader(new FileReader("current_user.csv"))) {
+//            reader.readLine(); // Skip the header
+//            username = reader.readLine(); // Read the username
+//        } catch (IOException e) {
+//            System.err.println("Error reading username from file: " + e.getMessage());
+//        }
+//        return username;
+//    }
 }

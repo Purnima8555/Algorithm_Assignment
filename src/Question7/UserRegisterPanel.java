@@ -11,13 +11,13 @@ public class UserRegisterPanel extends JFrame implements ActionListener {
     private JButton registerButton;
 
     public UserRegisterPanel() {
-        setTitle("User Registration");
-        setSize(400, 300);
+        setTitle("Register");
+        setSize(450, 350);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(null);
 
         // Create and add components
-        titleLabel = new JLabel("User Registration");
+        titleLabel = new JLabel("Register");
         titleLabel.setBounds(150, 10, 200, 30);
         add(titleLabel);
 
@@ -70,7 +70,7 @@ public class UserRegisterPanel extends JFrame implements ActionListener {
             String password = new String(passwordField.getPassword());
 
             // Pass user data to backend
-            UserDatabase.registerUser(name, email, username, password);
+            UserBackend.registerUser(name, email, username, password);
 
             // Navigate to the login form after successful registration
             JOptionPane.showMessageDialog(this, "Registration successful! Please log in.");
@@ -80,6 +80,9 @@ public class UserRegisterPanel extends JFrame implements ActionListener {
     }
 
     public static void main(String[] args) {
-        new UserRegisterPanel();
+        UserRegisterPanel registerPanel = new UserRegisterPanel();
+        // Center the register panel window on the screen
+        registerPanel.setLocationRelativeTo(null);
     }
+
 }
